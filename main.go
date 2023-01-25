@@ -1,8 +1,8 @@
 package main
 
 import (
-	"places/configs" //add this
-	"places/routes"  //add this
+	"places/configs"
+	"places/routes"
 
 	"github.com/gin-gonic/gin"
 )
@@ -12,7 +12,7 @@ func main() {
 
 	configs.ConnectDB()
 
-	routes.UserRoutes(router)
+	routes.PlaceRoutes(router)
 
 	router.Run("localhost:6000")
 }
